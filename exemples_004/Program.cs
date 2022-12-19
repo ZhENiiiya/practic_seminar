@@ -8,7 +8,7 @@ int revers_num = -number;
 
 if (revers_num < number)
 {
-    for (revers_num = -number; revers_num < number + 1; revers_num++)
+    for (revers_num = -number; revers_num <= number; revers_num++)
     {
         Console.Write(revers_num + " ");
     }
