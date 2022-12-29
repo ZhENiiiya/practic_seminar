@@ -1,13 +1,31 @@
 ﻿namespace Common;
 
 
-    public static class SystemCordinate
+public static class Get
 {
+    public static int ReadNumber(string s)
+    {
+        while (true)
+        {
+            Console.Write(s);
+            string text = Console.ReadLine();
+            if (int.TryParse(text, out int number))
+            {
+                return number;
+            }
+            else
+            {
+                Console.WriteLine("Невверный ввод");
+            }
+        }
+    }
+
+
     public static int GetNumberFromUser()
     {
         bool isParsed = int.TryParse(Console.ReadLine(), out int number);
 
-        if(isParsed)
+        if (isParsed)
         {
             return number;
         }
