@@ -5,7 +5,7 @@
 // 8 -> 36
 using Common;
 
-int a = SystemCordinate.GetNumberFromUser();
+int a = Get.GetNumberFromUser();
 
 int sum = GetSumNumbersBetweenOneToNumbers(a);
 
