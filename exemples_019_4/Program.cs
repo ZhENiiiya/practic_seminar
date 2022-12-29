@@ -3,7 +3,7 @@
 
 int[] matrix = new int[8];
 
-PrintArray(GetRandomMatrix(matrix));
+PrintArray(GetRandomArray(matrix));
 
 
 void PrintArray(int[] matr)
@@ -17,7 +17,7 @@ void PrintArray(int[] matr)
     Console.Write("]");
 }
 
-int[] GetRandomMatrix(int[] matr)
+int[] GetRandomArray(int[] matr)
 {
     Random r = new Random();
     for (int i = 0; i < matr.Length; i++)
