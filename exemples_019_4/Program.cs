@@ -1,18 +1,18 @@
 ﻿// Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
 // [1,0,1,1,0,1,0,0]
 
-int[] matrix = new int[8];
+int[] array = new int[8];
 
-PrintArray(GetRandomArray(matrix));
+PrintArray(GetRandomArray(array));
 
 
-void PrintArray(int[] matr)
+void PrintArray(int[] array)
 {
     Console.Write("[");
-    for (int i = 0; i < matr.Length-1; i++)
+    for (int i = 0; i < array.Length-1; i++)
     {
-        Console.Write($"{matr[i]}, ");
-        if (i == matr.Length-2) Console.Write($"{matr[i+1] }");
+        Console.Write($"{array[i]}, ");
+        if (i == array.Length-2) Console.Write($"{array[i+1] }");
     }
     Console.Write("]");
 }
