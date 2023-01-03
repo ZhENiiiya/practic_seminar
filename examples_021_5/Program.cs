@@ -19,5 +19,5 @@ int[] ReplacingPositiveWithNegativeAndViceVersa(int[] array)
 
 void PrintArray(int[] array1, int[] array2)
 {
-    Console.WriteLine($"[{string.Join(", ", array1)}] - [{string.Join(", ", array2)}]");
+    Console.WriteLine($"[{string.Join(", ", array1)}] -> [{string.Join(", ", array2)}]");
 }
