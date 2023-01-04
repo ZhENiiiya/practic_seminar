@@ -4,9 +4,24 @@
 // 3 -> 11
 // 2 -> 10
 
-int numberDex = 45;
+int numberDex = 2;
 
 Console.WriteLine($"{numberDex} -> {PrintArray(ConvertDexToBin(numberDex))}");
+Console.WriteLine($"{numberDex} -> {ConvertDexToBin2(numberDex)}");
+
+string ConvertDexToBin2(int num)
+{
+    string text = "";
+    for (int i = 0; 0 < num; i++)
+    {
+        text = num % 2 + text;
+        num /= 2;
+    }
+    return text;
+}
+
+
+
 
 int[] ConvertDexToBin(int num)
 {
