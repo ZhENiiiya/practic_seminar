@@ -15,7 +15,7 @@ public static class Get
             }
             else
             {
-                Console.WriteLine("Невверный ввод");
+                Console.WriteLine("Неверный ввод");
             }
         }
     }
