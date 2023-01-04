@@ -12,8 +12,8 @@ int numberC = Get.ReadNumber("Введите длину третьей стор�
 
 Console.WriteLine(GetTriangle(numberA, numberB, numberC));
 
-string GetTriangle(int A, int B, int C)
+bool GetTriangle(int A, int B, int C)
 {
-    if (A < (B + C) & B < (A + C) & C < (A + B)) return "Это правильный треугольник";
-    else return "Такой треугольник не возможен";
+    if (A < (B + C) & B < (A + C) & C < (A + B)) return true;
+    return false;
 }
